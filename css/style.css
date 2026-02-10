@@ -12,11 +12,46 @@ body {
     padding: 0;
 }
 
+/* HEADER */
+
 header {
-    padding: 20px;
     background-color: var(--deep-blue);
+    background-image: url("../img/stone.jpg");
+    background-size: cover;
+    background-position: center;
     color: var(white);
+    height: 400px;
+    padding: 20px;
+    text-align: center;
 }
+
+header .logo a {
+    background-image: url(../img/FB.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    text-indent: -10000px;
+    top: -30px;
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    color: var(--white);
+    margin: 20px 20px 0 0;
+}
+
+/* FEATURES */
 
 section {
     padding: 20px;
@@ -28,28 +63,43 @@ section {
     flex-direction: row;
 }
 
+.features {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.features figure {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.features figure img {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    box-shadow: var(--light-gray) 0 0 10px;
+    width: 50%;
+}
+
+/* FOOTER */
+
 footer {
-    padding: 10px 20px;
     background-color: var(--deep-blue);
     color: var(white);
+    padding: 10px 20px;
 }
 
-div {
-    background-color: var(--deep-taupe);
-    color: var(--white);
-    width: 20%;
-    margin: auto;
-}
-
-ul {
+footer ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    display: flex;
 }
 
-li{
-    background-color: var(--deep-taupe);
-    color: var(--white);
-    margin: 0 20px 0 0;
+footer ul li {
+    margin: 20px 20px 0 0;
 }
