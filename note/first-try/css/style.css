@@ -1,0 +1,107 @@
+:root {
+    --deep-blue: #73B1BF;
+    --light-gray: #F2F2F2;
+    --deep-taupe: #735755;
+    --accent: #F2B680;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--deep-blue);
+    background-image: url("../img/stone.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(white);
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo a {
+    background-image: url(../img/FB.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    text-indent: -10000px;
+    top: -30px;
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+nav li{
+    color: var(--white);
+    margin: 20px 20px 0 0;
+}
+
+/* FEATURES */
+
+section {
+    padding: 20px;
+    background-color: var(--light-gray);
+    color: var(--deep-taupe);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.features figure {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 400px;
+}
+
+.features figure img {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    box-shadow: var(--light-gray) 0 0 10px;
+    width: 400px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--deep-blue);
+    color: var(white);
+    padding: 10px 20px;
+}
+
+footer ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 20px 20px 0 0;
+}
