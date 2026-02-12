@@ -25,6 +25,7 @@ header {
     left: 0;
     position: fixed;
     top: 0;
+    height: 100px;
     width: 100%;
     z-index: 1000;
 }
@@ -75,10 +76,6 @@ header .logo a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-    header {
-        padding: 50px 0 60px 0;
-    }
-
     header .logo {
         display: none;
     }
