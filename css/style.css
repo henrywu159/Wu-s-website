@@ -74,6 +74,12 @@ header .logo a:hover {
     background-blend-mode: multiply;
 }
 
+@media screen and (max-width: 1000px) {
+    header .logo {
+        display: none;
+    }
+}
+
 /* SUBTITLE */
 .subtitle {
     background-color: white;
@@ -102,6 +108,9 @@ header .logo a:hover {
 #home .other {
     display: flex;
     flex-direction: row;
+
+    flex-wrap: wrap;
+
 }
 
 #home figure {
@@ -123,8 +132,8 @@ header .logo a:hover {
     width: 400px;
 
     overflow: hidden;
-
     position: relative;
+
 }
 
 #home figure a.image::after {
@@ -179,6 +188,8 @@ header .logo a:hover {
 #about-me .other {
     display: flex;
     padding-top: 50px;
+
+    flex-wrap: wrap;
 }
 
 #about-me img {
@@ -217,6 +228,8 @@ header .logo a:hover {
     display: flex;
     flex-direction: row-reverse;
     padding: 50px 0;
+
+    flex-wrap: wrap;
 }
 
 #side-project .project-1 img {
@@ -225,21 +238,30 @@ header .logo a:hover {
     margin: 0 auto;
 
     height: 700px;
-    width: 500px;
+    width: 700px;
 
     object-fit: cover;
-    object-position: 83% center;
+}
+
+@media screen and (max-width: 700px) {
+    #side-project .project-1 img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 #side-project .project-2 {
     display: flex;
     flex-direction: row;
     padding: 50px 0;
+
+    flex-wrap: wrap;
 }
 
 #side-project .project-2 img {
     border: 5px solid black;
     border-radius: 50%;
+    display: inline-block;
     margin: 0 auto;
 
     height: 700px;
@@ -275,6 +297,8 @@ header .logo a:hover {
     display: flex;
     justify-content: center;
     padding: 50px 0;
+
+    flex-wrap: wrap;
 }
 
 #interests .other div {
@@ -299,6 +323,7 @@ header .logo a:hover {
 }
 
 #interests .travel .high {
+    border-radius: 30px;
     float: right;
     height: 350px;
     width: 250px;
@@ -309,6 +334,7 @@ header .logo a:hover {
 }
 
 #interests .travel .short {
+    border-radius: 30px;
     width: 370px;
 
     object-fit: cover;
