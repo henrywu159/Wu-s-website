@@ -36,7 +36,7 @@ header nav ul {
     gap: 30px;
     justify-content: center;
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 0 100px;
 }
 
 header nav ul li a {
@@ -244,13 +244,6 @@ header .logo a:hover {
     object-fit: cover;
 }
 
-@media screen and (max-width: 700px) {
-    #side-project .project-1 img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
 #side-project .project-2 {
     display: flex;
     flex-direction: row;
@@ -262,14 +255,12 @@ header .logo a:hover {
 #side-project .project-2 img {
     border: 5px solid black;
     border-radius: 50%;
-    display: inline-block;
     margin: 0 auto;
 
     height: 700px;
-    width: 500px;
+    width: 700px;
 
     object-fit: cover;
-    object-position: 83% center;
 }
 
 #side-project article {
@@ -284,6 +275,18 @@ header .logo a:hover {
 
 #side-project article h3 {
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 700px) {
+    #side-project .project-1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #side-project .project-2 img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /* INTERESTS */
@@ -343,7 +346,8 @@ header .logo a:hover {
 
 /* FOOTER */
 footer {
-    background-color: blue;
+    background-color: lightblue;
     display: flex;
     justify-content: center;
+    padding: 20px 0;
 }
