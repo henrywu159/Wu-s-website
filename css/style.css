@@ -374,6 +374,7 @@ header .logo a:hover {
     border-radius: 30px;
     display: block;
     width: 80%;
+    height: 700px;
     margin: 10px auto;
     object-fit: cover;   
 }
