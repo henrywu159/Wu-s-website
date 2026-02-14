@@ -2,7 +2,6 @@
     --words-untouched: blue;
     --words-touched: darkblue;
     --images-touched: rgba(0, 0, 0, 0.5);
-
 }
 
 body {
@@ -320,7 +319,13 @@ header .logo a:hover {
     list-style-type: none;
 }
 
-#interests .travel ul li h4 {
+#interests .travel ul li {
+    border: 5px dashed blue;
+    border-radius: 20px;
+    margin: 0 20px 10px 0;
+}
+
+#interests .travel ul .first h4 {
     display: inline-block;
     text-align: center;
     width: 370px;
@@ -329,8 +334,8 @@ header .logo a:hover {
 #interests .travel .high {
     border-radius: 30px;
     float: right;
-    height: 350px;
-    width: 250px;
+    height: 340px;
+    width: 230px;
 
     margin: 0 20px 20px 0;
     object-fit: cover;
@@ -342,6 +347,44 @@ header .logo a:hover {
     width: 370px;
 
     object-fit: cover;
+}
+
+#interests .travel ul .second {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+#interests .travel ul .second h4 {
+    display: inline-block;
+    width: 65%;
+    text-align: center;
+    margin: auto;
+}
+
+#interests .travel ul .second button {
+    border-radius: 50%;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 10px 0 0 0;
+}
+
+#interests .travel ul .second img {
+    border-radius: 30px;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    object-fit: cover;   
+}
+
+#hakuba {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0.1!important;
 }
 
 /* FOOTER */

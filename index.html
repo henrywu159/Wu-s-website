@@ -109,13 +109,20 @@
                 <div class="travel">
                     <h3>travel</h3>
                     <ul>
-                        <li>
+                        <li class="first">
                             <h4>
                                 淡水沙崙
                             </h4>
                             <img class="high" src="img/淡水3.jpg" alt="淡水3">
                             <img class="short" src="img/淡水2.jpg" alt="淡水2">
 
+                        </li>
+                        <li class="second">
+                            <h4>
+                                日本白馬
+                            </h4>
+                            <button onclick="ChangeImage('hakuba')">swap</button>
+                            <img id="hakuba" class="fade-out" src="img/snow1.jpg" alt="hakuba">
                         </li>
                     </ul>
                 </div>
@@ -125,5 +132,7 @@
         <footer>
             OO市OO區OO街OO號OO樓、555-555-5555、my@gmail.com
         </footer>
+
+        <script src="script/main.js"></script>
     </body>
 </html>

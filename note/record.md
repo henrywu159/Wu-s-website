@@ -1,11 +1,7 @@
-# plan
-- 1.先堅持寫一陣子的原生 HTML/CSS。先弄懂什麼是 div, span, flexbox 排版。基礎不穩，學框架會很痛苦。
+# my website
+https://henrywu159.github.io/Wu-s-website/
 
-- 2.加入 CSS 讓它變漂亮： 試著寫一個自己的個人介紹頁面，放上照片、連結。
-
-- 3.下一步嘗試：Astro 當你覺得「每次都要複製貼上 <header>...</header> 很煩」的時候，去學 Astro。它最接近原生 HTML，但能讓你體驗「現代模組化開發」的威力，而且完美支援 GitHub Pages。
-
-# live server(insecurit)
+# live server(insecurit / practice only)
 ## website
 - 1.下載vscode
 - 2.在extensions查詢並安裝"live server"
@@ -57,6 +53,7 @@
 - 4.回到browser的repository -> `setting` -> `pages` -> 將branch從none改成main，等待幾分鐘後重整頁面即可在上方看到網域
 
 # html/css
+## 基礎
 - 1.基本html框架
     ```
     <!DOCTYPE html>
@@ -107,11 +104,56 @@
 - 3.輔助網站
   - 1.配色
     - adobe color:https://color.adobe.com/
-- 4.練習網站
-  - 1.first-try
 
-# offitial
-- 1.基本草稿
+## 問題
+- 1.怎麽讓header一直跟在螢幕最上方
+    ```
+    position: fixed;  //固定在螢幕上
+    left: 0;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;  //確保在圖層最上方
+    ```
+- 2.怎麽點擊按鈕跳轉頁面
+  - 1.再寫另一個html，然後使用<a href="html-file">
+  - 2.將想要跳轉的區域給一個id，然後使用<a href="#id">
+
+- 3.怎麽使的不同大小的螢幕都有良好的體驗
+  - 1.使用`display: flex`排版的話，可以用`flex-wrap: wrap`
+  - 2.另外的情況要使用`@media screen and (max-width)`再重新排版一次。可以使用`f12`來模擬不同大小的螢幕
+
+- 4.怎麽使的圖形被滑鼠觸碰後產生效果
+  - 1.在<img>外面再包一層<div>，然後給<div>上效果
+  - 2.使用`img::after`來創造一層虛擬內容
+    ```
+    #home figure a.image::after {
+        background-color: var(--images-touched);
+        content: '';  //虛擬物件必備
+        position: absolute;  //脫離排版，使的可以上疊到原圖
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;  //平時看不見，被觸碰後再顯現
+    }
+    ```
+
+## 技巧
+- 1.統一管理配色
+    ```
+    :root {
+        --words-untouched: blue;
+        --words-touched: darkblue;
+        --images-touched: rgba(0, 0, 0, 0.5);
+    }
+
+    header {
+        color: var(--words-touched);
+    }
+    ```
+
+# javascript
 
 # Source
 gimini
